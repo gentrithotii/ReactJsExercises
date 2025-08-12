@@ -2,6 +2,7 @@ import "./App.css";
 import AppHeader from "./components/exercise1/AppHeader";
 import GrettingBanner from "./components/exercise2/GrettingBanner";
 import ProfileCard from "./components/exercise3/ProfileCard";
+import PrimaryButton from "./components/exercise4/PrimaryButton";
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
           jobTitle={"Developer"}
           email={"gentrit@test.com"}
         />
+      </div>
+
+      <div className="mb-3">
+        <h1>Exercise 4</h1>
+        <PrimaryButton label={"Submit"} disabled={true} />
       </div>
     </div>
   );
