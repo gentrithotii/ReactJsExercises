@@ -1,18 +1,31 @@
 import "./App.css";
 import AppHeader from "./components/exercise1/AppHeader";
 import GrettingBanner from "./components/exercise2/GrettingBanner";
+import ProfileCard from "./components/exercise3/ProfileCard";
 
 function App() {
   return (
     <div className="text-center">
-      <div>
+      <div className="mb-3">
         <h1>Exercise 1</h1>
         <AppHeader title={"Hello there"} />
       </div>
 
-      <div>
+      <div className="mb-4">
         <h1>Exercise 2</h1>
         <GrettingBanner name={"Gentrit"} />
+      </div>
+
+      <div className="d-flex flex-column align-items-center">
+        <h1>Exercise 3</h1>
+        <ProfileCard
+          avatar={
+            "https://intentplanning.ca/wp-content/uploads/2019/01/sample-person.jpg"
+          }
+          name={"Gentrit Hoti"}
+          jobTitle={"Developer"}
+          email={"gentrit@test.com"}
+        />
       </div>
     </div>
   );
