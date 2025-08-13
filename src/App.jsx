@@ -5,6 +5,7 @@ import GrettingBanner from "./components/exercise2/GrettingBanner";
 import ProfileCard from "./components/exercise3/ProfileCard";
 import PrimaryButton from "./components/exercise4/PrimaryButton";
 import QuantitySelector from "./components/exercise5/QuantitySelector";
+import PasswordField from "./components/exercise6/PasswordField";
 
 function App() {
   const [selectedQty, setSelectedQty] = useState(1);
@@ -46,6 +47,11 @@ function App() {
         <h1>Exercise 5</h1>
         <p>{selectedQty}</p>
         <QuantitySelector onChange={handleQuantityChange} />
+      </div>
+
+      <div className="d-flex flex-column mb-3 align-items-center">
+        <h1>Exercise 6</h1>
+        <PasswordField />
       </div>
     </div>
   );
