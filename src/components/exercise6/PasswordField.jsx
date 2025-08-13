@@ -15,7 +15,7 @@ const PasswordField = () => {
         placeholder="Password"
         aria-describedby="basic-addon2"
       />
-      <div class="input-group-append">
+      <div className="input-group-append">
         <button
           className="btn btn-outline-secondary"
           onClick={toggleShow}

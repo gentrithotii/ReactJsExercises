@@ -7,9 +7,17 @@ import PrimaryButton from "./components/exercise4/PrimaryButton";
 import QuantitySelector from "./components/exercise5/QuantitySelector";
 import PasswordField from "./components/exercise6/PasswordField";
 import LikeButton from "./components/exercise7/LikeButton";
+import ContactSearch from "./components/exercise8/ContactSearch";
 
 function App() {
   const [selectedQty, setSelectedQty] = useState(1);
+  const contacSearchList = [
+    { id: 1, name: "Gentrit" },
+    { id: 2, name: "Ninja" },
+    { id: 3, name: "Stili" },
+    { id: 4, name: "Llejsi" },
+    { id: 5, name: "Taki" },
+  ];
 
   const handleQuantityChange = (qty) => {
     setSelectedQty(qty);
@@ -58,6 +66,11 @@ function App() {
       <div className="mb-3">
         <h1>Exercise 7</h1>
         <LikeButton />
+      </div>
+
+      <div className="mb-3">
+        <h1>Exercise 8</h1>
+        <ContactSearch contacts={contacSearchList} />
       </div>
     </div>
   );
