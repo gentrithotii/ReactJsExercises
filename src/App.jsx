@@ -1,10 +1,18 @@
+import { useState } from "react";
 import "./App.css";
 import AppHeader from "./components/exercise1/AppHeader";
 import GrettingBanner from "./components/exercise2/GrettingBanner";
 import ProfileCard from "./components/exercise3/ProfileCard";
 import PrimaryButton from "./components/exercise4/PrimaryButton";
+import QuantitySelector from "./components/exercise5/QuantitySelector";
 
 function App() {
+  const [selectedQty, setSelectedQty] = useState(1);
+
+  const handleQuantityChange = (qty) => {
+    setSelectedQty(qty);
+  };
+
   return (
     <div className="text-center">
       <div className="mb-3">
@@ -32,6 +40,12 @@ function App() {
       <div className="mb-3">
         <h1>Exercise 4</h1>
         <PrimaryButton label={"Submit"} disabled={true} />
+      </div>
+
+      <div className="mb-3">
+        <h1>Exercise 5</h1>
+        <p>{selectedQty}</p>
+        <QuantitySelector onChange={handleQuantityChange} />
       </div>
     </div>
   );
