@@ -8,6 +8,7 @@ import QuantitySelector from "./components/exercise5/QuantitySelector";
 import PasswordField from "./components/exercise6/PasswordField";
 import LikeButton from "./components/exercise7/LikeButton";
 import ContactSearch from "./components/exercise8/ContactSearch";
+import TodoList from "./components/exercise9/TodoList";
 
 function App() {
   const [selectedQty, setSelectedQty] = useState(1);
@@ -71,6 +72,11 @@ function App() {
       <div className="mb-3">
         <h1>Exercise 8</h1>
         <ContactSearch contacts={contacSearchList} />
+      </div>
+
+      <div className="mb-3">
+        <h1>Exercise 9</h1>
+        <TodoList />
       </div>
     </div>
   );
