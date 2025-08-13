@@ -6,6 +6,7 @@ import ProfileCard from "./components/exercise3/ProfileCard";
 import PrimaryButton from "./components/exercise4/PrimaryButton";
 import QuantitySelector from "./components/exercise5/QuantitySelector";
 import PasswordField from "./components/exercise6/PasswordField";
+import LikeButton from "./components/exercise7/LikeButton";
 
 function App() {
   const [selectedQty, setSelectedQty] = useState(1);
@@ -52,6 +53,11 @@ function App() {
       <div className="d-flex flex-column mb-3 align-items-center">
         <h1>Exercise 6</h1>
         <PasswordField />
+      </div>
+
+      <div className="mb-3">
+        <h1>Exercise 7</h1>
+        <LikeButton />
       </div>
     </div>
   );
